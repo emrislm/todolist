@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo list</title>
+    <link rel="stylesheet" type="text/css" href="todo.css">
+</head>
+<body>
+    <section class="top">
+
+        <!--<div style="height:100px; width:140px; overflow:auto; border:8px solid yellowgreen; padding:2%">
+            This scroll box has had a border added to it. You can add borders to anything in HTML - including scroll boxes.
+        </div>-->
+
+        <div id="today">
+            <p>Today</p>
+            <p id="date"></p>
+        </div>
+
+        <div id="tomorrow">
+            <p>Tomorrow</p>
+            <p id="dateTomorrow"></p>
+        </div>          
+    </section>
+
+    <section class="middle">
+        <div id="listToday">
+            <ul class="list" id="todoList"></ul>
+        </div>
+
+        <div class="vl"></div>
+        
+        <div id="listTomorrow">
+            <ul class="list" id="todoListTomorrow"></ul>
+        </div>    
+    </section>
+
+    <section class="bottom">
+        <input class="todoInput" type="text" placeholder="Add something" id="inputTodo" />
+        <input class="todoInput" type="text" placeholder="Add something" id="inputTodoTomorrow" />
+
+        
+        <!-- <button class="button" onclick="addText()">Add</button> -->
+    </section>
+    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>LOL da mag nie. Input is leeg.</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="todo.js"></script>
+</body>
+</html>
